@@ -23,8 +23,6 @@
 # uv pip install cvxpy
 
 
-
-
 # Standard library imports
 import os
 
@@ -38,14 +36,14 @@ import cvxpy as cp
 
 
 
-
 # --------------------------------------------------------------------------
 # Load data
 # --------------------------------------------------------------------------
 
 # Load msci country index return series
 
-path_to_data = '../data/'
+path_to_data = '/Users/leandrobianda/Desktop/qpmwp-course/data/'
+
 # N = 24
 N = 10
 df = pd.read_csv(os.path.join(path_to_data, 'msci_country_indices.csv'),

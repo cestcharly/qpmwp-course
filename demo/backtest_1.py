@@ -134,7 +134,7 @@ optimization = MeanVariance(
 # --------------------------------------------------------------------------
 
 # Define rebalancing dates
-n_days = 21 * 3
+n_days = 21 * 3 # Rebalance every 3 months (assuming 21 trading days per month)
 start_date = '2010-01-01'
 dates = data['return_series'].index
 rebdates = dates[dates > start_date][::n_days].strftime('%Y-%m-%d').tolist()
